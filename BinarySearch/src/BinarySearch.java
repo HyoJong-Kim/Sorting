@@ -13,8 +13,6 @@ public class BinarySearch {
     {
         int mid = (start + end) / 2;
 
-
-
         if(end < start)
             return -1;
         else
@@ -38,15 +36,13 @@ public class BinarySearch {
 
         int size = 1 << 20;
         int index;
-        int target = random.nextInt(size);
+        int target = size;
         int[] array = new int[size];
-
 
         for(int i = 0; i < size; i++)
         {
             array[i] = i;
         }
-
 
         if((index = _BinarySearch(array, target, 0, array.length - 1)) != -1)
             System.out.println(array[index] + " is " + (index+1) + "th element.");
